@@ -10,6 +10,8 @@
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.3",
     "react-chatbot-kit": "^1.1.1",
