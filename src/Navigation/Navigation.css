@@ -1,0 +1,21 @@
+.nav-img{
+	padding-right: 7px;
+}
+
+.navigation .navbar {
+	background-color: #f0dd92;
+}
+
+.nav-username{
+	margin: auto 15px;
+}
+
+.navigation img{
+	height: 50px;
+}
+
+.user {
+	display: flex;
+	position: absolute;
+	right: 0;
+}
