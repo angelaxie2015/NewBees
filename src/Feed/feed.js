@@ -8,7 +8,13 @@ function Feed() {
 		<div className="feed">
 			<PostMessage />
 
-			<Post />
+			<Post 
+				profilePic="https://cultivatedculture.com/wp-content/uploads/2019/12/LinkedIn-Profile-Picture-Example-Madeline-Mann.jpeg"
+				message="testing testing"
+				timestamp="timeeeee is 10pm"
+				username="angelaaaaa"
+				image="../../NewBeeLogo.png"
+			/>
 			<Post />
 			<Post />
 			
