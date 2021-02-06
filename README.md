@@ -1,3 +1,9 @@
+# To do later:
+
+1. make the website responsive
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
