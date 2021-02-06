@@ -1,8 +1,9 @@
 import React from "react";
 import "./Navigation.css";
 
-import { Route, BrowserRouter } from "react-router-dom";
+import { Route, BrowserRouter, Link } from "react-router-dom";
 import {AppBar, Toolbar, IconButton, Typography, Button, Avatar } from '@material-ui/core';
+import {Navbar, Nav} from 'react-bootstrap';
 import Register from "../Register/Register";
 
 function Navigation() {
@@ -13,10 +14,18 @@ function Navigation() {
 
 			<AppBar position="static" className="navbar">
 			  <Toolbar>
-			    <img src="../../NewBeeLogo.png" alt="bee image" className="nav-img"></img>
-			 
-			    <Button color="inherit">Login</Button>
-				<Button color="inherit" onClick={Register} >Register</Button>
+
+			  	<Navbar.Brand href="/">
+			    	<img src="../../NewBeeLogo.png" alt="bee image" className="nav-img"></img>
+			 	</Navbar.Brand>
+
+			    <Nav.Link href="">
+			    	<span className="nav-link" color="inherit">LogIn</span>
+			    </Nav.Link>
+
+			    <Nav.Link href="register">
+			    	<span className="nav-link" color="inherit">Register</span>
+			    </Nav.Link>
 
 			    <div className="user">
 				    <Avatar />

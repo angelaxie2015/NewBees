@@ -7,7 +7,7 @@ function Register() {
 	return (
 		<div className="register">
             
-            <h1>Hello</h1>
+            <h1>Register</h1>
 		</div>
 	);
 }

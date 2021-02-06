@@ -1,7 +1,8 @@
 .navigation .nav-img{
+	padding-top: 1px;
 	padding-right: 7px;
-	height: 80px;
-	width: 100px;
+	height: 65px;
+	width: 150px;
 }
 
 .navigation .navbar {
@@ -20,4 +21,8 @@
 	display: flex;
 	position: absolute;
 	right: 0;
+}
+
+.nav-link {
+	padding:0 10px; 
 }
