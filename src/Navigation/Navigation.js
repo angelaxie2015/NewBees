@@ -1,7 +1,7 @@
 import React from "react";
 import "./Navigation.css";
 
-import { Route, BrowserRouter, Link } from "react-router-dom";
+// import { Route, BrowserRouter, Link } from "react-router-dom";
 import {AppBar, Toolbar, IconButton, Typography, Button, Avatar } from '@material-ui/core';
 import {Navbar, Nav} from 'react-bootstrap';
 import Register from "../Register/Register";
@@ -22,6 +22,15 @@ function Navigation() {
 			    <Nav.Link href="">
 			    	<span className="nav-link" color="inherit">LogIn</span>
 			    </Nav.Link>
+
+			    <Nav.Link href="register">
+			    	<span className="nav-link" color="inherit">Register</span>
+			    </Nav.Link>
+
+			    <Nav.Link href="feed">
+			    	<span className="nav-link" color="inherit">Feeds</span>
+			    </Nav.Link>
+
 
 			    <Nav.Link href="register">
 			    	<span className="nav-link" color="inherit">Register</span>
