@@ -10,10 +10,12 @@ function Home() {
   return (
     <div id="home-page">
 		<Container fluid>
-			<Row>
+			<Row className="home">
 				<Col>
+					<div className="home-left" >
 					<h1 className="home-name">NewBees</h1>
-					<h2 className="home-descrip">Soemthing skdajf akdjf i falisj lfaksdj fakj fjasi</h2>				
+					<h2 className="home-descrip">Soemthing skdajf akdjf i falisj lfaksdj fakj fjasi Soemthing skdajf akdjf i falisj lfaksdj fakj fjasi</h2>				
+					</div>
 				</Col>
 				
 				<Col>

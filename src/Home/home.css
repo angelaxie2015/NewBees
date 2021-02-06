@@ -1,3 +1,43 @@
-.home-img{
+#home-page {
+	background-color: #f9f6e7;
+}
 
+.home-img{
+	position: relative;
+	z-index: 2;
+	height: 100%;
+	right: 60px;
+	width: 100%;
+	padding-top: 40px;
+}
+
+.home-name{
+	padding-top:10px;
+	padding-left: 20px;
+
+	font-family: Aladin;
+	color: #943b0e;
+	font-size: 130px;
+}
+
+.home {
+	padding-top: 50px;
+}
+
+.home-left {
+	margin: 50px 3px 0;
+	border-style: dashed;
+  	border-width: 13px;
+  	border-radius: 10%;
+  	border-color: #bdae88;
+  	width: 90%;
+  	border-color: 3;
+	
+	position: relative;
+	left: 70px;
+	z-index: 1;
+}
+
+.home-descrip {
+	font-family: 'Roboto Condensed', sans-serif;
 }
