@@ -96,12 +96,7 @@ function Register(props) {
                        onChange={handleChange}
                 />
 
-                <div className="form-group text-left">
-                <label htmlFor="exampleProfilePicture">Profile Picture</label>
-                <input type="file" onChange={this.fileSelectedHandler}/>
-                <button onClick={this.uploadHandler}>Upload!</button>
-
-                </div>
+                
                 <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
 				<div className="form-group text-left">
