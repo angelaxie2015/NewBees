@@ -15,7 +15,7 @@ function Home() {
 					<div className="left">
 						<div className="home-left" >
 							<h1 className="home-name">NewBees</h1>
-							<h2 className="home-descrip">Soemthing skdajf akdjf i falisj lfaksdj fakj fjasi Soemthing skdajf akdjf i falisj lfaksdj fakj fjasi</h2>				
+							<h2 className="home-descrip">We're the only ones who make honey, pollinate flowers, and dress like this!</h2>				
 							
 						</div>
 
