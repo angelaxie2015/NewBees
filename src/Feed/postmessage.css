@@ -36,3 +36,7 @@
 	justify-content: space-evenly;
 }
 
+.postMessage-top form button {
+	display: none;
+}
+
