@@ -1,5 +1,7 @@
-.nav-img{
+.navigation .nav-img{
 	padding-right: 7px;
+	height: 80px;
+	width: 100px;
 }
 
 .navigation .navbar {
