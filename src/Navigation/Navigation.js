@@ -19,6 +19,16 @@ function Navigation() {
 			    	<img src="../../NewBeeLogo.png" alt="bee image" className="nav-img"></img>
 			 	</Navbar.Brand>
 
+				<form>
+					<label>
+						Username:
+						<input type="text" name="username" />
+						password:
+						<input type="text" name="password" />
+					</label>
+					<input type="submit" value="Submit" />
+				</form>
+
 			    <Nav.Link href="">
 			    	<span className="nav-link" color="inherit">LogIn</span>
 			    </Nav.Link>
@@ -31,10 +41,6 @@ function Navigation() {
 			    	<span className="nav-link" color="inherit">Feeds</span>
 			    </Nav.Link>
 
-
-			    <Nav.Link href="register">
-			    	<span className="nav-link" color="inherit">Register</span>
-			    </Nav.Link>
 
 			    <div className="user">
 				    <Avatar />
