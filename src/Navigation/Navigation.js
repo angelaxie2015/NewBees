@@ -13,8 +13,8 @@ function Navigation() {
 
 			<AppBar position="static" className="navbar">
 			  <Toolbar>
-			    <img src="../../bee.jpg" alt="bee image" className="nav-img"></img>
-			    <Typography variant="h6" className="nav_title">NewBees</Typography>
+			    <img src="../../NewBeeLogo.png" alt="bee image" className="nav-img"></img>
+			 
 			    <Button color="inherit">Login</Button>
 				<Button color="inherit" onClick={Register} >Register</Button>
 
