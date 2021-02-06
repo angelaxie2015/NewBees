@@ -14,7 +14,6 @@
 }
 
 .navigation img{
-	height: 50px;
 }
 
 .user {
@@ -25,4 +24,31 @@
 
 .nav-link {
 	padding:0 10px; 
+}
+
+.nav-form {
+	height: 30px;
+}
+
+.nav-right-hand {
+	padding-right: 20px;
+}
+
+.nav-input {
+	padding: 0 4px;
+	display: flex;
+}
+
+.navigation p {
+	display: flex;
+	padding: 0 5px;
+}
+
+.nav-box{
+	display: flex;
+	height: 30px;
+}
+.nav-submit {
+	display: flex;
+	height: 30px;
 }
