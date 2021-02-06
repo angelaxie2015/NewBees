@@ -24,7 +24,9 @@ function App() {
            </Route>
         </Switch>
 
-        <Chatbot config={config} actionProvider={ActionProvider} messageParser={MessageParser} />
+        <div className="chatbot">
+          <Chatbot config={config} actionProvider={ActionProvider} messageParser={MessageParser} />
+        </div>
       </BrowserRouter>
 
 
