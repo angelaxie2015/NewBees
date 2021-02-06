@@ -1,12 +1,14 @@
 const session = require('express-session');
 //require module, pass it the session module
-const MongoDBStore = require('connect-mongodb-session')(session);
-const router = express.Router();
+//const MongoDBStore = require('connect-mongodb-session')(session);
+
 
 const express = require('express');
+const router = express.Router();
 
 
 const fs = require("fs");
+const { Server } = require('http');
 //const Schema = mongoose.Schema;
 
 let app = express();
@@ -23,12 +25,27 @@ app.use(session({ secret: 'some secret here' }));
 
 
 
-app.use(express.static("./public"));
+
 app.use(express.json());
+
+app.get("/", function(req,res,next) {
+    res.send("HELLO")
+})
+
+app.get("/register", function(req,res,next) {
+    res.send("register")
+})
 
 
 app.post("/register", function (req, res, next) {
     console.log("HELLO");
+    res.setHeader("BYE");
+
+
+
+
+
+
     // //get the JSON from the xhttp
     // let user = req.body;
 
@@ -95,3 +112,11 @@ app.post("/register", function (req, res, next) {
 
 
 });
+
+app.listen(8080, function (err) {
+    if (err) {
+      throw err
+    }
+  
+    console.log('Server started at 8080')
+  })

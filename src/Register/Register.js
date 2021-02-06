@@ -1,4 +1,4 @@
-import React, {useState}  from "react";
+import React, {useState, Component}   from "react";
 
 import axios from 'axios';
 import "../Register/Register.js"
@@ -38,8 +38,7 @@ function Register(props) {
         if(state.password === state.confirmPassword) {
 			console.log("here2")
             sendDetailsToServer()
-			console.log("here")
-            alert('Passwords do not match');
+			
 			 
         } else {
 			console.log("here")
@@ -53,32 +52,37 @@ function Register(props) {
                 "email":state.email,
                 "password":state.password,
             }
-            axios.post('/register')
+            axios.post('http://localhost:8080/register')
                 .then(function (response) {
                     if(response.status === 200){
                         setState(prevState => ({
                             ...prevState,
                             'successMessage' : 'Registration successful. Redirecting to home page..'
                         }))
-                        localStorage.setItem(ACCESS_TOKEN_NAME,response.data.token);
+                        //localStorage.setItem(ACCESS_TOKEN_NAME,response.data.token);
                         redirectToHome();
-                        props.showError(null)
+                        //props.showError(null)
                     } else{
-                        props.showError("Some error ocurred");
+                        alert("Some error ocurred");
                     }
                 })
                 .catch(function (error) {
                     console.log(error);
                 });    
         } else {
-            props.showError('Please enter valid username and password')    
+            alert('Please enter valid username and password')    
         }
         
     }
+    let fileSelectedHandler = event => {
+        console.log(event)
+    }
+      
 	return (
 		<div className="register">
             
             <h1>Register</h1>
+
 			<div className="card col-12 col-lg-4 login-card mt-2 hv-center">
             <form>
                 <div className="form-group text-left">
@@ -91,6 +95,13 @@ function Register(props) {
 					   value={state.email}
                        onChange={handleChange}
                 />
+
+                <div className="form-group text-left">
+                <label htmlFor="exampleProfilePicture">Profile Picture</label>
+                <input type="file" onChange={this.fileSelectedHandler}/>
+                <button onClick={this.uploadHandler}>Upload!</button>
+
+                </div>
                 <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
 				<div className="form-group text-left">
