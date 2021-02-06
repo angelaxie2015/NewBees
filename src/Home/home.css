@@ -9,6 +9,21 @@
 	right: 90px;
 	width: 100%;
 	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.left .home-button {
+	margin: 40px ;
+	margin-left: 270px;
+	background-color: #bdae88;
+	color: black;
+	border: none;
+	width: 200px;
+	height: 100;
+}
+
+.left .home-button:hover {
+	background-color: #ffd56b;
 }
 
 .home-name{
