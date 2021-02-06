@@ -2,6 +2,7 @@
 
 1. make the website responsive
 
+# 🐝 About NewBees 🐝
 
 
 # Getting Started with Create React App
