@@ -2,9 +2,9 @@ import React from 'react'
 import './home.css'
 import Navigation from '../Navigation/Navigation'
 import {Row, Col, Container, Button} from 'react-bootstrap'
-import {Link, Router} from 'react-router-dom'
-import Chatbot from 'react-chatbot-kit'
+
 import Feed from "../Feed/feed.js"
+
 
 function Home() {
   return (
@@ -22,7 +22,7 @@ function Home() {
 			</Row>
 		</Container>
 
-		<Chatbot />
+		
     </div>
 
   )
