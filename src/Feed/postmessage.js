@@ -19,11 +19,6 @@ function PostMessage(){
 					<input placeholder="image URL" />
 					<button onClick={handleSubmit} type="submit">Hidden submit</button>
 				</form>
-
-			</div>
-
-			<div className="postMessage-bottom">
-
 			</div>
 		</div>
 	);
