@@ -25,37 +25,6 @@ The aim of NewBees is really to increase awareness to the little bees as well as
 - https://www.npr.org/transcripts/825305756
 - https://theconversation.com/bees-how-important-are-they-and-what-would-happen-if-they-went-extinct-121272
 
-
-
-# To Do Later
-
-- make the pages dynamic
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# 🐝 About NewBees 🐝
-
-Bees are very important to the fragile ecosystem we have today. With the world losing 30% of honeybee colonies every year, it would be scary to imagine what would happen if they truly do go extinct! Those little hard workers are responsible for 1/3 of crop pollination! 
-
-The world has always been a delicate cycle of give and take, one humans tend to forget about when lost in greed. 
-
-Well, for those who care about the environment and have already found their hobby in bee keeping, NewBees is for them! NewBees is a platform that cultivates new beekeeper and spectators alike (in hopes of pulling them to the greener side of the world 🌲) 
-
-The aim of NewBees is really to increase awareness to the little bees as well as to contribute to the increase in honeybee colonies around the world! One beekeeper at a time 🐝
-
-
 ## Inspiration
 
 “According to all known laws of aviation, there is no way a bee should be able to fly. It's wings are too small to get its fat little body off the ground. The bee, of course, flies anyway, because bees don't care what humans think is impossible.”                                    --- "Bee Movie"
@@ -88,15 +57,34 @@ Here is an image of our bees resting from work, having a cute picnic. 😍😍
 
 Here is the structure of our code:
 
-![Image of bee picnic](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/383/729/datas/original.png)
+![Image of code structure](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/383/747/datas/original.png)
 
 We had multiple features such as chatbot, feeds, and register/login. For each of the features, we had multiple sub-components as well. Such as the feed and post-message components within the feed feature. We also had a navigation bar which incorporated bootstrap styling. 
+
 ## Challenges we ran into
+
+We are all pretty new to React and have barely used it in the past, thus learning the syntax of it as well as how to render different things in React is a big change for us. In addition to that, we originally wanted to use CockroachDB; however, we weren't completely able to connect it to our front end, so we switched back to one that we are more familiar with, MongoDB. 
+
+We wanted to create a chatbot where it can pick up a word that the user highlights in a paragraph and do an auto search on that word. However, we were stuck on how to get React to work with JQuery so that's one of the next steps that we will be doing in the future. 
 
 ## Accomplishments that we're proud of
 
+We were able to incorporate a chatbot into our application and we were also able to build a backend on our own from scratch!!
+
+We also really appreciate what the mentors have done to us. They were really patient and helpful when it comes to building the backend since we were all super lost on what to do. We are grateful and at the same time proud of us for taking the initiative to seek for help. 
+
 ## What we learned
+
+We were definitely more comfortable working with React, understanding its structure and idea with components. We also become more competent in terms of working with the backend. 
+
+Last but not least, we picked up on some beekeeping terminologies to show off in the future. 😝😝For instance, did you know that "absconding swarm" meant an entire colony of bees that abandons the hive because of disease, wax moth, excessive heat or water, lack of resources, or other reasons and it is a big issue that beekeepers face?
 
 ## What's next for NewBees
 
+1. Make our web page responsive
+2. Create the daily quiz feature
+3. Further link the backend with the frontend. 
+4. Incorporate more features with the bot such as allowing it to do web-crawling to search for the content the users need
+
+## Note
 We hosted our website on domain.com with the .space extension as newbees.space. However, the hosting takes 24 hours to go through. 
