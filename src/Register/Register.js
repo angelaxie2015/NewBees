@@ -35,8 +35,8 @@ function Register(props) {
 		console.log(state.confirmPassword)
         if(state.password === state.confirmPassword) {
 			console.log("here2")
-            sendDetailsToServer()	
-			 
+            sendDetailsToServer()
+
         } else {
 			console.log("here")
             alert('Passwords do not match');   
@@ -131,6 +131,7 @@ function Register(props) {
                 >
                     Register
                 </button>
+                
             </form>
 			<div className="alert alert-success mt-2" style={{display: state.successMessage ? 'block' : 'none' }} role="alert">
                 {state.successMessage}
