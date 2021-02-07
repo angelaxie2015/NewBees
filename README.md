@@ -1,6 +1,3 @@
-# To do later:
-
-1. make the website responsive
 
 # 🐝 About NewBees 🐝
 
