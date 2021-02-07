@@ -23,6 +23,7 @@ The aim of NewBees is really to increase awareness to the little bees as well as
 - https://github.com/codeclassifiers/loginforms - for the registration forms
 - https://github.com/Samar20/OnlineOrdering - for the backend 
 - https://www.npr.org/transcripts/825305756
+- https://theconversation.com/bees-how-important-are-they-and-what-would-happen-if-they-went-extinct-121272
 
 
 
