@@ -51,4 +51,18 @@
 .nav-submit {
 	display: flex;
 	height: 30px;
+	margin-left: 10px;
+	background-color: #83b582;
+	border: none;
+	border-radius: 20%;
+	width: 150px;
+}
+
+.nav-submit:hover {
+	background-color: #d6e4aa;
+}
+
+.form-control {
+	height: 30px;
+	margin: 0 2px;
 }
