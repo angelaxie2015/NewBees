@@ -72,10 +72,7 @@ function Register(props) {
       
 	return (
 		<div className="register">
-            
-            <h1>Register</h1>
-
-			<div className="card col-12 col-lg-4 login-card mt-2 hv-center">
+			<div className="reg-form card col-12 col-lg-4 login-card  hv-center">
             <form>
                 <div className="form-group text-left">
                 <label htmlFor="exampleInputEmail1">Email address</label>
@@ -137,11 +134,10 @@ function Register(props) {
             <div className="mt-2">
                 
                 <span>Already have an account? Log in above!</span>
-                
-                
+                       
             </div>
-            
-        </div>
+
+            </div>
 		</div>
 	);
 }

@@ -10,9 +10,9 @@ import ActionProvider from './ChatBot/actionprovider';
 import MessageParser from "./ChatBot/messageparser";
 import config from './ChatBot/config';
 
+
 function App() {
   return (
-    
       <BrowserRouter>
         <Navigation />
         <Switch>          

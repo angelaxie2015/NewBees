@@ -9,6 +9,7 @@ class MessageParser {
 
   parse(message) {
     console.log(message);
+    this.actionProvider.search(message);
 
     const terms = [
     				"abdomen", 
