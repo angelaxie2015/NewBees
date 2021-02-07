@@ -4,10 +4,12 @@ import axios from 'axios';
 import "../Register/Register.js"
 import './Register.css';
 import {API_BASE_URL, ACCESS_TOKEN_NAME} from '../constants/apiConstants';
-import { withRouter } from "react-router-dom";
+import { withRouter, Router, useHistory } from "react-router-dom";
 
 
 function Register(props) {
+	const history = useHistory()
+
 	const [state , setState] = useState({
 		email : "",
 		username : "",
@@ -26,17 +28,21 @@ function Register(props) {
 
     const handleSubmitClick = (e) => {
 		e.preventDefault();
+
+		history.push("/")
+
 		console.log(state.password);
 		console.log(state.confirmPassword)
         if(state.password === state.confirmPassword) {
 			console.log("here2")
-            sendDetailsToServer()
-			
+            sendDetailsToServer()	
 			 
         } else {
 			console.log("here")
             alert('Passwords do not match');   
         }
+
+        
 	}
 	const sendDetailsToServer = () => {
         if(state.email.length && state.password.length) {
