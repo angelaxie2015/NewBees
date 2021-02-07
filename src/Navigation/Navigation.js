@@ -11,6 +11,39 @@ import Register from "../Register/Register";
 
 function Navigation() {
 
+	const checkIfLoggedIn = () => {
+        
+
+            
+            axios.get('http://localhost:8080/loggedIn' )
+                .then(function (response) {
+                    if(response.status === 200){
+						console.log(JSON.stringify(response.data));
+
+						if(JSON.stringify(response.data.auth) === true){
+							//toggle user logged in 
+							console.log("e");
+							console.log(JSON.stringify(response.data.username))
+							
+						}
+						
+						else{
+							console.log(JSON.stringify(response.data))
+						}
+
+                       
+                        
+                    } else{
+                        alert("Some error ocurred");
+                    }
+                })
+                .catch(function (error) {
+                    console.log(error);
+                });    
+        
+        
+    }
+
 	const [state , setState] = useState({
 		username : "",
         password : "",
@@ -54,6 +87,7 @@ function Navigation() {
 						}
 						else{
 							alert("Logged in!");
+							checkIfLoggedIn();
 							//login
 						}
 
@@ -73,7 +107,7 @@ function Navigation() {
     }
 	
 	return (
-		<div className="navigation">
+		<div className="navigation" onLoad ={checkIfLoggedIn}>
 
 			<Navbar className="navbar">
 			    <Navbar.Brand href="/" className="nav-img">

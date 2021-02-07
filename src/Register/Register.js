@@ -31,6 +31,7 @@ function Register(props) {
         if(state.password === state.confirmPassword) {
 			console.log("here2")
             sendDetailsToServer()
+
 			
 			 
         } else {
@@ -128,6 +129,7 @@ function Register(props) {
                 >
                     Register
                 </button>
+                
             </form>
 			<div className="alert alert-success mt-2" style={{display: state.successMessage ? 'block' : 'none' }} role="alert">
                 {state.successMessage}
