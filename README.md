@@ -2,6 +2,10 @@
 
 1. make the website responsive
 
+# 🐝 About NewBees 🐝
+
+
+# Credit where credit is due
 
 
 # Getting Started with Create React App
