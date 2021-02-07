@@ -7,6 +7,10 @@
 
 # Credit where credit is due
 
+- https://github.com/codeclassifiers/loginforms - for the registration forms
+- https://github.com/Samar20/OnlineOrdering - for the backend 
+
+
 
 # Getting Started with Create React App
 
