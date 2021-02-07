@@ -2,3 +2,9 @@
 	background-color: #ffffc5;
 	padding: 10px;
 }
+
+.chatbot {
+	margin-top: 40px;
+	margin-right: 80px;
+	position: fixed;
+}

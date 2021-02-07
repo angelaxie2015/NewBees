@@ -1,13 +1,13 @@
 .postMessage {
 	display: flex;
 	margin-top: 20px;
-	margin-left: auto;
+	margin-left: 70px;
 	margin-right: auto;
 	flex-direction: column;
 	background-color: white;
 	border-radius: 15px;
 	box-shadow: 0px 5px 7px -7px rgba(0,0,0,0.75);
-	width: 70%;
+	width: 130%;
 }
 
 .postMessage-top {
