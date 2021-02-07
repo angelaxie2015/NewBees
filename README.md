@@ -1,6 +1,14 @@
 
 # 🐝 About NewBees 🐝
 
+Bees are very important to the fragile ecosystem we have today. With the world losing 30% of honeybee colonies every year, it would be scary to imagine what would happen if they truly do go extinct! Those little hard workers are responsible for 1/3 of crop pollination! 
+
+The world has always been a delicate cycle of give and take, one humans tend to forget about when lost in greed. 
+
+Well for those who care about the enivornment and have already found their hobby in bee keeping, NewBees is for them! NewBees is a platform that cultivates new beekeeper and spectators alike (in hopes of pulling them to the greener side of the world 🌲) 
+
+
+The aim of NewBees is really to increase awareness to the little bees as well as to contribute to the increase in honeybee colonies around the world! One beekeeper at a time 🐝
 
 
 
@@ -14,6 +22,7 @@
 
 - https://github.com/codeclassifiers/loginforms - for the registration forms
 - https://github.com/Samar20/OnlineOrdering - for the backend 
+- https://www.npr.org/transcripts/825305756
 
 
 
