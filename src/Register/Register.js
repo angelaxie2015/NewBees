@@ -23,14 +23,7 @@ function Register(props) {
         }))
 	}
 	
-	const redirectToLogin = () => {
-        props.updateTitle('Login')
-        props.history.push('/login'); 
-	}
-	const redirectToHome = () => {
-        props.updateTitle('Home')
-        props.history.push('/');
-    }
+
     const handleSubmitClick = (e) => {
 		e.preventDefault();
 		console.log(state.password);
@@ -47,21 +40,21 @@ function Register(props) {
 	}
 	const sendDetailsToServer = () => {
         if(state.email.length && state.password.length) {
-            //props.showError(null);
-            const payload={
-                "email":state.email,
-                "password":state.password,
-            }
-            axios.post('http://localhost:8080/register')
+
+            
+            axios.post('http://localhost:8080/register', 
+                {
+                email: state.email,
+                username: state.username,
+                password : state.password,
+                confirmpassword : state.confirmPassword
+            } )
                 .then(function (response) {
                     if(response.status === 200){
-                        setState(prevState => ({
-                            ...prevState,
-                            'successMessage' : 'Registration successful. Redirecting to home page..'
-                        }))
-                        //localStorage.setItem(ACCESS_TOKEN_NAME,response.data.token);
-                        redirectToHome();
-                        //props.showError(null)
+
+                        alert(JSON.stringify(response.data));
+                        //THEN REDIRECT TO HOME WITH LOGGED IN
+                        
                     } else{
                         alert("Some error ocurred");
                     }
@@ -74,9 +67,7 @@ function Register(props) {
         }
         
     }
-    let fileSelectedHandler = event => {
-        console.log(event)
-    }
+
       
 	return (
 		<div className="register">
@@ -142,8 +133,10 @@ function Register(props) {
                 {state.successMessage}
             </div>
             <div className="mt-2">
-                <span>Already have an account? </span>
-                <span className="loginText" onClick={() => redirectToLogin()}>Login here</span> 
+                
+                <span>Already have an account? Log in above!</span>
+                
+                
             </div>
             
         </div>

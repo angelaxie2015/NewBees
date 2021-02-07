@@ -1,5 +1,8 @@
-import React from "react";
+
 import "./Navigation.css";
+import React, {useState, Component}   from "react";
+
+import axios from 'axios';
 
 // import { Route, BrowserRouter, Link } from "react-router-dom";
 import {AppBar, Toolbar, IconButton, Typography, Button, Avatar } from '@material-ui/core';
@@ -7,6 +10,67 @@ import {Navbar, Nav, Form, FormControl} from 'react-bootstrap';
 import Register from "../Register/Register";
 
 function Navigation() {
+
+	const [state , setState] = useState({
+		username : "",
+        password : "",
+        successMessage: null
+	})
+	const handleChange = (e) => {
+        const {id , value} = e.target   
+        setState(prevState => ({
+            ...prevState,
+            [id] : value
+        }))
+	}
+	
+	const handleSubmitClick = (e) => {
+		e.preventDefault();
+		sendDetailsToServer()
+			
+			 
+        
+	}
+
+	const sendDetailsToServer = () => {
+        if(state.username.length && state.password.length) {
+
+            
+            axios.post('http://localhost:8080/check', 
+                {
+                
+                username: state.username,
+                password : state.password
+                
+            } )
+                .then(function (response) {
+                    if(response.status === 200){
+
+						if(JSON.stringify(response.data) == "wrong"){
+							alert("Wrong password")
+						}
+						if(JSON.stringify(response.data) == "none"){
+							alert("User does not exist")
+						}
+						else{
+							alert("Logged in!");
+							//login
+						}
+
+                       
+                        
+                    } else{
+                        alert("Some error ocurred");
+                    }
+                })
+                .catch(function (error) {
+                    console.log(error);
+                });    
+        } else {
+            alert('Please enter valid username and password')    
+        }
+        
+    }
 	
 	return (
 		<div className="navigation">
@@ -23,11 +87,23 @@ function Navigation() {
 			    <div className="nav-right-hand">
 				    <form className="nav-form">
 						<label className="nav-input">
-							<p>Username: </p>
-							<input className="nav-box" type="text" name="username" />
-							password:
-							<input className="nav-box" type="text" name="password" />
-							<input className="nav-submit" type="submit" value="Submit" />
+							
+							<input type="username"
+								className="form-control"
+								id="username"
+								placeholder="Username"
+								value={state.username}
+								onChange={handleChange}
+							/>
+							
+							<input type="password"
+								className="form-control"
+								id="password"
+								placeholder="Password"
+								value={state.password}
+								onChange={handleChange}
+							/>
+							<input className="nav-submit" type="submit" value="Submit" onClick={handleSubmitClick} />
 						</label>
 					</form>
 				</div>
