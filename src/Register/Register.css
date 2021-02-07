@@ -12,10 +12,12 @@
 .register {
 	text-align: center;
 	background-color: #f9f6e7;
+	padding: 40px 0 20px;
+
 }
 
-.reg-form {
+.register .reg-form {
 	padding: 50px;
 	margin: 80px auto;
-	border: none;
+	margin-top: 0;
 }

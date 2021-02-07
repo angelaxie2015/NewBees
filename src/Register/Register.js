@@ -71,7 +71,7 @@ function Register(props) {
       
 	return (
 		<div className="register">
-			<div className="reg-form card col-12 col-lg-4 login-card mt-2 hv-center">
+			<div className="reg-form card col-12 col-lg-4 login-card  hv-center">
             <form>
                 <div className="form-group text-left">
                 <label htmlFor="exampleInputEmail1">Email address</label>
